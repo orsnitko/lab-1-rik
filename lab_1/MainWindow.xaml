@@ -1,0 +1,83 @@
+﻿<Window x:Class="lab_1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:lab_1"
+        mc:Ignorable="d"
+        Closing="Window_Close"
+        Title="Текстовий редактор" Height="432" Width="870" FontSize="18" MinWidth="430" MinHeight="300" Name="tittle">
+
+    <Window.Resources>
+        <!-- Стиль кнопки -->
+        <Style TargetType="Button">
+            <Setter Property="Height" Value="35"/>
+            <Setter Property="Width" Value="70"/>
+            <Setter Property="FontFamily" Value="Verdana"/>
+            <Setter Property="FontSize" Value="12"/>
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Cursor" Value="Arrow"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}"
+                        BorderBrush="{TemplateBinding BorderBrush}"
+                        BorderThickness="{TemplateBinding BorderThickness}">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#9B417D"/>
+                                <Setter Property="Foreground" Value="White"/>
+                                <Setter Property="Cursor" Value="Hand"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+
+        <!-- Розширений стиль для "Зберегти як" -->
+        <Style x:Key="SaveAsStyle" TargetType="Button" BasedOn="{StaticResource {x:Type Button}}">
+            <Setter Property="Width" Value="80"/>
+        </Style>
+
+        <!-- Стиль текстового редактора -->
+        <Style TargetType="TextBox">
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="FontFamily" Value="Consolas"/>
+            <Setter Property="Padding" Value="5"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="AcceptsReturn" Value="True"/>
+            <Setter Property="TextWrapping" Value="Wrap"/>
+            <Setter Property="VerticalScrollBarVisibility" Value="Auto"/>
+            <Setter Property="HorizontalScrollBarVisibility" Value="Auto"/>
+        </Style>
+        <Style TargetType="StackPanel">
+
+        </Style>
+    </Window.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <!-- Для панелі кнопок -->
+            <RowDefinition Height="*"/>
+            <!-- Для текстового редактора -->
+        </Grid.RowDefinitions>
+
+        <!-- Верхня панель кнопок -->
+        <StackPanel Orientation="Horizontal" Background="#FAE8FF" Grid.Row="0">
+            <Button Content="Створити" Click="Button_Create"/>
+            <Button Content="Відкрити" Click="Button_Open"/>
+            <Button Content="Зберегти" Click="Button_Save"/>
+            <Button Content="Зберегти як" Style="{StaticResource SaveAsStyle}" Click="Button_SaveAs"/>
+            <Button Content="Закрити" Click="Button_Close"/>
+        </StackPanel>
+
+        <!-- Текстовий редактор -->
+        <TextBox Name="text_box1" Grid.Row="1" BorderBrush="#9B417D" TextChanged="UpdateFileName"/>
+    </Grid>
+</Window>

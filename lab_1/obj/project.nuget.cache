@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "JWpUah543zY=",
+  "success": true,
+  "projectFilePath": "V:\\for_rik\\lab_1\\lab_1\\lab_1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Орися Снітко\\.nuget\\packages\\microsoft-windowsapicodepack-core\\1.1.5\\microsoft-windowsapicodepack-core.1.1.5.nupkg.sha512",
+    "C:\\Users\\Орися Снітко\\.nuget\\packages\\microsoft-windowsapicodepack-shell\\1.1.5\\microsoft-windowsapicodepack-shell.1.1.5.nupkg.sha512"
+  ],
+  "logs": []
+}

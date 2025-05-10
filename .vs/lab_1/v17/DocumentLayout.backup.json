@@ -1,0 +1,57 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "V:\\for_rik\\lab_1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4C1B0172-C963-4B78-B658-EEB821DF7374}|lab_1\\lab_1.csproj|v:\\for_rik\\lab_1\\lab_1\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4C1B0172-C963-4B78-B658-EEB821DF7374}|lab_1\\lab_1.csproj|solutionrelative:lab_1\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C1B0172-C963-4B78-B658-EEB821DF7374}|lab_1\\lab_1.csproj|v:\\for_rik\\lab_1\\lab_1\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{4C1B0172-C963-4B78-B658-EEB821DF7374}|lab_1\\lab_1.csproj|solutionrelative:lab_1\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "V:\\for_rik\\lab_1\\lab_1\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "lab_1\\MainWindow.xaml",
+              "ToolTip": "V:\\for_rik\\lab_1\\lab_1\\MainWindow.xaml",
+              "RelativeToolTip": "lab_1\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-02-25T08:47:04.339Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "V:\\for_rik\\lab_1\\lab_1\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "lab_1\\MainWindow.xaml.cs",
+              "ToolTip": "V:\\for_rik\\lab_1\\lab_1\\MainWindow.xaml.cs",
+              "RelativeToolTip": "lab_1\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-25T08:46:58.067Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
